@@ -4,7 +4,7 @@ import FeedbackList from './Components/FeedbackList';
 import Header from './Components/Header';
 import FeedBackData from './Data/FeedBackData';
 function App() {
-  const [feedback, setFeedback] = useState()
+  const [feedback, setFeedback] = useState(FeedBackData)
   return (
     <>
     <Header />
