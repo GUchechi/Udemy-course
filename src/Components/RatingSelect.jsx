@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 
-const RatingSelect = () => {
+const RatingSelect = ({select}) => {
     const [selected, SetSelected] = useState(10)
-    const handleChange = (event) => {}
+    const handleChange = (event) => {
+        SetSelected(+event.currentTarget.value)
+        select(+event.currentTarget.value)
+    }
   return (
     <ul className='rating'>
       {Array.from({ length: 10 }, (_, i) => (
