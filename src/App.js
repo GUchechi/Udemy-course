@@ -7,6 +7,11 @@ import Header from './Components/Header';
 import FeedBackData from './Data/FeedBackData';
 function App() {
   const [feedback, setFeedback] = useState(FeedBackData)
+
+  const addFeedback = () => {
+    
+  }
+
   const deleteFeedback = (id) => {
     if(window.confirm('Are you sure you want to delete')) {
       setFeedback(feedback.filter((item) => item.id !== id))
