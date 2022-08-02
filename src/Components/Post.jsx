@@ -1,4 +1,4 @@
-import {Navigate, useNavigate} from 'react-router-dom'
+import {Navigate, useNavigate, Routes, Route} from 'react-router-dom'
 import React from 'react'
 
 const Post = () => {
@@ -17,6 +17,9 @@ const Post = () => {
     <div>
         <h1>Posts</h1>
         <button onClick={onClick}>Click me!!!</button>
+        <Routes>
+            <Route path='/show' element={<h1>Hello world</h1>}  />
+        </Routes>
     </div>
   )
 }
