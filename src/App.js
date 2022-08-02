@@ -10,6 +10,7 @@ import FeedBackData from './Data/FeedBackData';
 import AboutPage from './pages/AboutPage';
 import AboutPageIconLink from './Components/AboutPageIconLink';
 import Post from './Components/Post';
+import {FeedbackProvider} from './context/FeedbackContext'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   }
 
   return (
+    <FeedbackProvider>
     <Router>
       <Header />
       <div className="container">
@@ -46,6 +48,7 @@ function App() {
         <AboutPageIconLink />
       </div>  
     </Router>
+    </FeedbackProvider>
   );
 }
 
