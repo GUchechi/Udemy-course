@@ -5,7 +5,8 @@ const Post = () => {
     const params = useParams()
   return (
     <div>
-        <h1>{params.id}</h1>
+        <h1>Post {params.id}</h1>
+        <p>Name:{params.name}</p>
     </div>
   )
 }
