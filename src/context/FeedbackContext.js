@@ -9,12 +9,41 @@ export const FeedbackProvider = ({children}) => {
       id: 1,
       text: 'This item is from context',
       rating: 10,
+    },
+    {
+      id: 1,
+      text: 'This item is from context',
+      rating: 10,
+    },
+    {
+      id: 1,
+      text: 'This item is from context',
+      rating: 10,
+    },
+    {
+      id: 1,
+      text: 'This item is from context',
+      rating: 10,
     }
   ])
+
+  const [feedbackEdit, setFeedbackEdit] = useState({
+    item:{},
+    edit: false,
+  })
 
   const deleteFeedback = (id) => {
     if(window.confirm('Are you sure you want to delete')) {
       setFeedback(feedback.filter((item) => item.id !== id))
+    }
+  }
+
+  const editFeedback = (item) => {
+    if(window.confirm('Are you sure you want to edit this item?')) {
+      setFeedbackEdit({
+        item,
+        edit: true,
+      })
     }
   }
 
