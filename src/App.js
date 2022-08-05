@@ -15,13 +15,6 @@ import {FeedbackProvider} from './context/FeedbackContext'
 function App() {
   const [feedback, setFeedback] = useState(FeedBackData)
 
-  const addFeedback = (newFeedback) => {
-    newFeedback.id = uuidv4()
-    setFeedback([newFeedback, ...feedback]) 
-  }
-
-  
-
   return (
     <FeedbackProvider>
     <Router>
