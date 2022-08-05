@@ -1,7 +1,9 @@
 import Card from "./Shared/Card"
+import { useContext } from 'react'
 import {FaTimes} from 'react-icons/fa'
+import FeedbackContext from '../context/FeedbackContext'
 
-const FeedbackItem = ({item,handleDelete}) => {
+const FeedbackItem = ({item}) => {
 
   return (
     
