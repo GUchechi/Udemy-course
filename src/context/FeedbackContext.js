@@ -32,12 +32,15 @@ export const FeedbackProvider = ({children}) => {
     edit: false,
   })
 
+
+  // deleteFeedback
   const deleteFeedback = (id) => {
     if(window.confirm('Are you sure you want to delete')) {
       setFeedback(feedback.filter((item) => item.id !== id))
     }
   }
 
+  // editFeedback
   const editFeedback = (item) => {
     if(window.confirm('Are you sure you want to edit this item?')) {
       setFeedbackEdit({
@@ -47,7 +50,7 @@ export const FeedbackProvider = ({children}) => {
     }
   }
 
-
+// Add Feedback
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4()
     setFeedback([newFeedback, ...feedback]) 
