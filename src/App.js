@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={
             <>
-               <FeedbackForm handleAdd={addFeedback} />
+               <FeedbackForm />
               <FeedbackStats/>
               <FeedbackList  
               feedback={feedback}
