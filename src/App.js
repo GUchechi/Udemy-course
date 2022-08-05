@@ -1,11 +1,9 @@
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
-import { useState } from 'react';
 import './App.css';
 import FeedbackForm from './Components/FeedbackForm';
 import FeedbackList from './Components/FeedbackList';
 import FeedbackStats from './Components/FeedbackStats';
 import Header from './Components/Header';
-import FeedBackData from './Data/FeedBackData';
 import AboutPage from './pages/AboutPage';
 import AboutPageIconLink from './Components/AboutPageIconLink';
 import Post from './Components/Post';
@@ -13,8 +11,7 @@ import {FeedbackProvider} from './context/FeedbackContext'
 
 
 function App() {
-  const [feedback, setFeedback] = useState(FeedBackData)
-
+  
   return (
     <FeedbackProvider>
     <Router>
@@ -26,7 +23,6 @@ function App() {
                <FeedbackForm />
               <FeedbackStats/>
               <FeedbackList  
-              feedback={feedback}
              />
             </>
           }></Route>
