@@ -9,7 +9,9 @@ const FeedbackForm = () => {
     const {addFeedback, feedbackEdit} = useContext(FeedbackContext);
 
 
-    useEffect
+    useEffect(() => {
+        console.log('Hello')
+    }, [])
 
     const [text, setText] = useState('');
     const [btnDisabled, setBtnDisabled] = useState(true)
