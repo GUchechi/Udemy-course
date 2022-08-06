@@ -6,7 +6,7 @@ import Card from './Shared/Card'
 import FeedbackContext from '../context/FeedbackContext'
 
 const FeedbackForm = () => {
-    const {addFeedback, feedbackEdit} = useContext(FeedbackContext);
+    const {addFeedback, feedbackEdit, updateFeedback} = useContext(FeedbackContext);
 
 
     useEffect(() => {
