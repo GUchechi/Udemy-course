@@ -22,8 +22,7 @@ function App() {
             <>
                <FeedbackForm />
               <FeedbackStats/>
-              <FeedbackList  
-             />
+              <FeedbackList  />
             </>
           }></Route>
           <Route path='/about' element={<AboutPage/>}/>
