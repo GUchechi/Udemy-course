@@ -50,7 +50,7 @@ export const FeedbackProvider = ({children}) => {
     }
   }
 
-// Add Feedback
+// Add FeedBack
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4()
     setFeedback([newFeedback, ...feedback]) 
