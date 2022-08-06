@@ -11,7 +11,7 @@ const FeedbackForm = () => {
 
     useEffect(() => {
         console.log('Hello')
-    }, [])
+    }, [feedbackEdit])
 
     const [text, setText] = useState('');
     const [btnDisabled, setBtnDisabled] = useState(true)
