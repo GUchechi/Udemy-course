@@ -23,7 +23,7 @@ export const FeedbackProvider = ({children}) => {
     {
       id: 1,
       text: 'This item is from context',
-       rating: 10,
+      rating: 10,
     }
   ])
 
@@ -31,11 +31,6 @@ export const FeedbackProvider = ({children}) => {
     item:{},
     edit: false,
   })
-
-  // Update the feedback
-  const updateFeedback = (id, upditem) => {
-      console.log(id, upditem)
-  }
 
 
   // deleteFeedback
@@ -69,7 +64,6 @@ export const FeedbackProvider = ({children}) => {
       addFeedback,
       editFeedback,
       feedbackEdit,
-      updateFeedback,
       }}>
       {children}
     </FeedbackContext.Provider>
