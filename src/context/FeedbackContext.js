@@ -59,7 +59,7 @@ export const FeedbackProvider = ({ children }) => {
 
     const data = await response.json()
 
-    // NOTE: no need to spread data and item
+    
     setFeedback(feedback.map((item) => (item.id === id ? data : item)))
 
     
