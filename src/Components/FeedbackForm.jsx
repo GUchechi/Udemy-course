@@ -24,7 +24,7 @@ function FeedbackForm() {
  
 
  
-  const handleTextChange = ({ target: { value } }) => { // 👈  get the value
+  const handleTextChange = ({ target: { value } }) => { e
     if (value === '') {
       setBtnDisabled(true)
       setMessage(null)
