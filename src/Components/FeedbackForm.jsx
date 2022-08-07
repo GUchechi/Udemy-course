@@ -23,7 +23,7 @@ function FeedbackForm() {
 
  
 
-  // prettier-ignore
+ 
   const handleTextChange = ({ target: { value } }) => { // 👈  get the value
     if (value === '') {
       setBtnDisabled(true)
