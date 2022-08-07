@@ -21,7 +21,7 @@ function FeedbackForm() {
     }
   }, [feedbackEdit])
 
-  // NOTE: This should be checking input value not state as state won't be the updated value until the next render of the component
+ 
 
   // prettier-ignore
   const handleTextChange = ({ target: { value } }) => { // 👈  get the value
