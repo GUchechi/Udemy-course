@@ -4,8 +4,8 @@ import FeedbackItem from './FeedbackItem'
 
 import FeedbackContext from '../context/FeedbackContext'
 
-
-
+// NOTE: added layout prop for nicer animation
+// https://www.framer.com/docs/animation/#layout-animations
 
 function FeedbackList() {
   const { feedback, isLoading } = useContext(FeedbackContext)
