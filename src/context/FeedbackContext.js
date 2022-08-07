@@ -62,7 +62,6 @@ export const FeedbackProvider = ({ children }) => {
     // NOTE: no need to spread data and item
     setFeedback(feedback.map((item) => (item.id === id ? data : item)))
 
-    // FIX: this fixes being able to add a feedback after editing
     
     setFeedbackEdit({
       item: {},
