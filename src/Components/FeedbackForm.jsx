@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from 'react'
 import RatingSelect from './RatingSelect'
-import Card from './Shared/Card'
-import Button from './Shared/Button'
+import Card from './shared/Card'
+import Button from './shared/Button'
 import FeedbackContext from '../context/FeedbackContext'
 
 function FeedbackForm() {
@@ -21,15 +21,15 @@ function FeedbackForm() {
     }
   }, [feedbackEdit])
 
- 
+  // NOTE: This should be checking input value not state as state won't be the updated value until the next render of the component
 
- 
-  const handleTextChange = ({ target: { value } }) => { e
+  // prettier-ignore
+  const handleTextChange = ({ target: { value } }) => { // 👈  get the value
     if (value === '') {
       setBtnDisabled(true)
       setMessage(null)
       
-
+  // prettier-ignore
     } else if (value.trim().length < 10) { // 👈 check for less than 10
       setMessage('Text must be at least 10 characters')
       setBtnDisabled(true)
