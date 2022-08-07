@@ -61,7 +61,7 @@ function FeedbackForm() {
     }
   }
 
-  // NOTE: pass selected to RatingSelect so we don't need local duplicate state
+  
   return (
     <Card>
       <form onSubmit={handleSubmit}>
